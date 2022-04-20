@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JOIN EVENT - Form Submission</title>
+        <link rel="stylesheet" href="java.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!--font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+    </head>
+    <script>
+        function sum()
+        {
+            var a=parseInt(document.getElementById("p1").value);
+            var b=parseInt(document.getElementById("p2").value);
+            document.getElementById("p3").value=9999999999-a+b
+        }
+        function arth()
+        {
+            var a=parseInt(document.getElementById("p1").value);
+            var b=parseInt(document.getElementById("p2").value);
+            alert("Congratulation! Your Event ID is : " + (9999999999-a+b) +". Press OK to Register for the event. Thank You! :) " );
+        }
+    </script>
+    <body>
+        <form>
+            <h3>REGISTRATION FOR EVENT : </h3>
+            <br>
+            <label>ENTER NAME : </label>
+            <input type="text" id="p-name" value=""> <br><br>
+            <label>PHONE NO : +91 </label>
+            <input type="text" id="p1" value=""> <br><br>
+            <Label>AGE : </Label>
+            <input type="text"  id="p2" value=""> <br><br>
+            <label>EVENT ID : # </label>
+            <input type="text" id="p3" disabled><br><br>
+            <div id="generate-id">
+            <input  type="button" value="GENERATE" onclick="sum()">&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" onclick="arth()" value="CONFIRM">
+            <br>
+            <label>Please note: You have to show this Ticket ID to our invigilator for your attendence.</label>
+            <br><br>
+            </div>
+        </form>
+    </body>
+</html>

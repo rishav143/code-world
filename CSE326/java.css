@@ -1,0 +1,13 @@
+body {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg);
+}
+form {
+    background-color: aqua;
+    background-size: cover;
+    font-size: large;
+    margin-right: 500px;
+    margin-left: 500px;
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    position: relative;top: 100px;
+}
